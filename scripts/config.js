@@ -1,0 +1,36 @@
+Game.config = {
+	game:{
+		atlasName:'ship-atlas',
+		width:800,
+		height:600,
+		world:{
+			width:10000,
+			height:10000
+		}
+	},
+	z:{
+		enemy:5,
+		playerShot:9,
+		player:10,
+	},
+	shot:{
+		laser:{
+			duration:500,
+			speed:10
+		}
+	},
+	ships:{
+		courier:{
+			frame:'ship.png',
+			frameAccelerate:'ship-exhaust.png',
+			rotationPower:0.05,
+			enginePower:0.002
+		},
+		enemy:{
+			frame:'enemy.png',
+			frameAccelerate:'enemy.png',
+			rotationPower:1,
+			enginePower:0
+		}
+	}
+};
